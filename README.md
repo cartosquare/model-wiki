@@ -7,7 +7,7 @@ Model country relations based on wiki pages.
 * gdal >= 1.11.2
 * gcc >= 4.9.2
 
-## Install
+## Build
 ```
 gcc -std=c++11 -I/usr/include/gdal/ -lgdal -lcurl -lstdc++ -o modelwiki main.cpp
 ```
