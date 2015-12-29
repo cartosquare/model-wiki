@@ -9,8 +9,9 @@ Model country relations based on wiki pages.
 
 ## Build
 ```
-gcc -std=c++11 -I/usr/include/gdal/ -lgdal -lcurl -lstdc++ -o modelwiki main.cpp
+gcc -std=c++11 -I/usr/include/gdal/ -I/usr/local/include -L/usr/local/lib -lgdal -lcurl -lstdc++ -o modelwiki main.cpp
 ```
+according to your gdal install location, you may need to specify different link options.
 
 ## Runing and Output
 Use follow command to start running, this may take several hours.
