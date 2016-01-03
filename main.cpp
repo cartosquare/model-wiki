@@ -340,12 +340,12 @@ public:
             } while (has_next_page);
             
             std::cout << "add " << count << " links." << std::endl;
-            // save every 50 countries, to avoid data loss :)
-            if (count % 50 == 0) {
-                std::cout << "Save ...\n";
-                this->Serialize(country.get_name());
-                
-            }
+            // save every 10 countries, to avoid data loss :)
+//            if (i % 10 == 0) {
+//                std::cout << "Save ...\n";
+//                this->Serialize(country.get_name());
+//                
+//            }
         }
         return true;
     }
